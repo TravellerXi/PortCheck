@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 #author:admin@mytlu.cn
+# coding:utf-8
 
 import socket
 timeout=100
@@ -12,13 +13,13 @@ def get_ip_status(ip, port):
         server.connect(ADDR)
         server.close()
         print('connect to ip {0} on port {1} success'.format(ip, port))
-        file= open('E:\\sucess.txt','a+')
+        file= open('D:\\sucess.txt','a+')
         file.write('connect to ip {0} on port {1} success\n'.format(ip, port))
         file.close()
 
     except Exception as err:
         print('connect to ip {0} on port {1} failed'.format(ip, port))
-        file = open("E:\\failed.txt", 'a+')
+        file = open("D:\\failed.txt", 'a+')
         file.write('connect to ip {0} on port {1} failed\n'.format(ip, port))
         file.close()
 
@@ -31,14 +32,14 @@ def get_ip_status(ip, port):
 
 ip=[]
 port=[]
-with open("E:\port.txt","r") as f:
+with open("D:\port.txt","r") as f:
     porta=f.read().split('\n')
     #print('主机列表：')
     #print (ipa)
     for port in porta:
         #print (host)
         port=int(port)
-        with open("E:\ip.txt", "r") as p:
+        with open("D:\ip.txt", "r") as p:
             ipa = p.read().split('\n')
             #print('端口列表：')
            # print(porta)
