@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#author:admin@mytlu.cn
 
 import socket
 timeout=100
