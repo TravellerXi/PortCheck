@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 #author:admin@mytlu.cn
+# coding:utf-8
 
 import socket
 timeout=1
