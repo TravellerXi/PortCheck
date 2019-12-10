@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#author:admin@mytlu.cn
+#author:https://github.com/TravellerXi
 # coding:utf-8
 
 import socket
