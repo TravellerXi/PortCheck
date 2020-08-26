@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #author:https://github.com/TravellerXi
 # coding:utf-8
 
